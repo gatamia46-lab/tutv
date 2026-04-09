@@ -1,0 +1,499 @@
+--------- beginning of system
+--------- beginning of crash
+--------- beginning of main
+2026-03-12 14:45:15.682  3116-3116  chatty                  com.example.tutv                     I  uid=10044(com.example.tutv) expire 26 lines
+2026-03-12 14:45:16.604  3116-3150  chatty                  com.example.tutv                     I  uid=10044(com.example.tutv) expire 9 lines
+2026-03-12 14:45:17.602  3116-3116  chatty                  com.example.tutv                     I  uid=10044(com.example.tutv) expire 1 line
+2026-03-12 14:45:17.756  3116-3150  chatty                  com.example.tutv                     I  uid=10044(com.example.tutv) expire 1 line
+2026-03-12 14:45:21.742  3116-3157  chatty                  com.example.tutv                     I  uid=10044(com.example.tutv) expire 1 line
+2026-03-12 14:45:30.710  3116-3123  chatty                  com.example.tutv                     I  uid=10044(com.example.tutv) expire 2 lines
+2026-03-12 14:46:04.013  1753-1839  InputDispatcher         system_server                        E  channel '4501be4 com.example.tutv/com.example.tutv.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+2026-03-12 14:49:54.133  3286-3286  chatty                  com.example.tutv                     I  uid=10044(com.example.tutv) expire 7 lines
+2026-03-12 14:49:54.855  3286-3286  AndroidRuntime          com.example.tutv                     E  FATAL EXCEPTION: main
+                                                                                                    Process: com.example.tutv, PID: 3286
+                                                                                                    java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.tutv/com.example.tutv.MainActivity}: java.lang.IllegalStateException: No suitable media source factory found for content type: 2
+                                                                                                    	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2646)
+                                                                                                    	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+                                                                                                    	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                                                                    	at android.os.Looper.loop(Looper.java:154)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:6077)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+                                                                                                    Caused by: java.lang.IllegalStateException: No suitable media source factory found for content type: 2
+                                                                                                    	at androidx.media3.common.util.Assertions.checkStateNotNull(Assertions.java:137)
+                                                                                                    	at androidx.media3.exoplayer.source.DefaultMediaSourceFactory.createMediaSource(DefaultMediaSourceFactory.java:447)
+                                                                                                    	at androidx.media3.exoplayer.ExoPlayerImpl.createMediaSources(ExoPlayerImpl.java:1914)
+                                                                                                    	at androidx.media3.exoplayer.ExoPlayerImpl.setMediaItems(ExoPlayerImpl.java:582)
+                                                                                                    	at androidx.media3.common.BasePlayer.setMediaItems(BasePlayer.java:56)
+                                                                                                    	at androidx.media3.common.BasePlayer.setMediaItem(BasePlayer.java:41)
+                                                                                                    	at com.example.tutv.MainActivity.reproducirCanal(MainActivity.kt:60)
+                                                                                                    	at com.example.tutv.MainActivity.onCreate(MainActivity.kt:32)
+                                                                                                    	at android.app.Activity.performCreate(Activity.java:6662)
+                                                                                                    	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+                                                                                                    	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2599)
+                                                                                                    	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707) 
+                                                                                                    	at android.app.ActivityThread.-wrap12(ActivityThread.java) 
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460) 
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:102) 
+                                                                                                    	at android.os.Looper.loop(Looper.java:154) 
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:6077) 
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method) 
+                                                                                                    	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866) 
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756) 
+2026-03-12 14:50:09.164  3286-3293  chatty                  com.example.tutv                     I  uid=10044(com.example.tutv) expire 2 lines
+2026-03-12 14:58:37.385  3427-3427  chatty                  com.example.tutv                     I  uid=10044(com.example.tutv) expire 27 lines
+2026-03-12 14:58:38.214  3427-3427  <no-tag>                com.example.tutv                     D  HostConnection::get() New Host Connection established 0xa6b3a2c0, tid 3427
+2026-03-12 14:58:38.226  3427-3427  Choreographer           com.example.tutv                     I  Skipped 36 frames!  The application may be doing too much work on its main thread.
+2026-03-12 14:58:38.263  3427-3472  <no-tag>                com.example.tutv                     D  HostConnection::get() New Host Connection established 0xa6b3a600, tid 3472
+2026-03-12 14:58:38.272  3427-3472  OpenGLRenderer          com.example.tutv                     I  Initialized EGL, version 1.4
+2026-03-12 14:58:38.272  3427-3472  OpenGLRenderer          com.example.tutv                     D  Swap behavior 1
+2026-03-12 14:58:38.272  3427-3472  OpenGLRenderer          com.example.tutv                     W  Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+2026-03-12 14:58:38.272  3427-3472  OpenGLRenderer          com.example.tutv                     D  Swap behavior 0
+2026-03-12 14:58:38.297  3427-3472  EGL_emulation           com.example.tutv                     D  eglCreateContext: 0xa6becfe0: maj 2 min 0 rcv 2
+2026-03-12 14:58:38.333  3427-3472  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6becfe0: ver 2 0 (tinfo 0xa6bfd6b0)
+2026-03-12 14:58:38.444  3427-3472  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6becfe0: ver 2 0 (tinfo 0xa6bfd6b0)
+2026-03-12 14:58:39.230  3427-3427  Choreographer           com.example.tutv                     I  Skipped 48 frames!  The application may be doing too much work on its main thread.
+2026-03-12 14:58:43.919  3427-3475  ProfileInstaller        com.example.tutv                     D  Installing profile for com.example.tutv
+2026-03-12 14:58:52.423  3427-3434  art                     com.example.tutv                     I  Debugger is no longer active
+2026-03-12 14:58:52.423  3427-3434  art                     com.example.tutv                     I  Starting a blocking GC Instrumentation
+2026-03-12 15:03:58.279  1753-1839  InputDispatcher         system_server                        E  channel '61f2096 com.example.tutv/com.example.tutv.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+2026-03-12 15:05:59.583  3591-3591  art                     com.example.tutv                     I  Late-enabling -Xcheck:jni
+2026-03-12 15:05:59.583  3591-3591  art                     com.example.tutv                     W  Unexpected CPU variant for X86 using defaults: x86
+2026-03-12 15:05:59.660  3591-3591  System                  com.example.tutv                     W  ClassLoader referenced unknown path: /data/app/com.example.tutv-1/lib/x86
+2026-03-12 15:05:59.988  3591-3591  art                     com.example.tutv                     W  Verification of java.util.List com.example.tutv.MainActivity.leerListaM3U(java.lang.String) took 100.560ms
+2026-03-12 15:05:59.998  3591-3591  AppCompatDelegate       com.example.tutv                     D  Checking for metadata for AppLocalesMetadataHolderService : Service not found
+2026-03-12 15:06:00.023  3591-3591  art                     com.example.tutv                     W  Before Android 4.1, method android.graphics.PorterDuffColorFilter androidx.vectordrawable.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+2026-03-12 15:06:00.323  3591-3591  ExoPlayerImpl           com.example.tutv                     I  Init 6e1ede6 [AndroidXMedia3/1.2.0] [generic_x86, sdk_google_atv_x86, unknown, 24]
+2026-03-12 15:06:00.400  3591-3591  System.err              com.example.tutv                     W  java.lang.IllegalStateException: No suitable media source factory found for content type: 2
+2026-03-12 15:06:00.400  3591-3591  System.err              com.example.tutv                     W  	at androidx.media3.common.util.Assertions.checkStateNotNull(Assertions.java:137)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.source.DefaultMediaSourceFactory.createMediaSource(DefaultMediaSourceFactory.java:447)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.ExoPlayerImpl.createMediaSources(ExoPlayerImpl.java:1914)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.ExoPlayerImpl.setMediaItems(ExoPlayerImpl.java:582)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at androidx.media3.common.BasePlayer.setMediaItems(BasePlayer.java:56)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at androidx.media3.common.BasePlayer.setMediaItem(BasePlayer.java:41)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at com.example.tutv.MainActivity.reproducirCanal(MainActivity.kt:78)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at com.example.tutv.MainActivity.onCreate(MainActivity.kt:38)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at android.app.Activity.performCreate(Activity.java:6662)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2599)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at android.os.Handler.dispatchMessage(Handler.java:102)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at android.os.Looper.loop(Looper.java:154)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at android.app.ActivityThread.main(ActivityThread.java:6077)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at java.lang.reflect.Method.invoke(Native Method)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+2026-03-12 15:06:00.401  3591-3591  System.err              com.example.tutv                     W  	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+2026-03-12 15:06:00.926  3591-3591  <no-tag>                com.example.tutv                     D  HostConnection::get() New Host Connection established 0xa6bff100, tid 3591
+2026-03-12 15:06:01.147  3591-3591  Choreographer           com.example.tutv                     I  Skipped 83 frames!  The application may be doing too much work on its main thread.
+2026-03-12 15:06:01.503  3591-3627  <no-tag>                com.example.tutv                     D  HostConnection::get() New Host Connection established 0xa6bff580, tid 3627
+2026-03-12 15:06:01.521  3591-3627  OpenGLRenderer          com.example.tutv                     I  Initialized EGL, version 1.4
+2026-03-12 15:06:01.521  3591-3627  OpenGLRenderer          com.example.tutv                     D  Swap behavior 1
+2026-03-12 15:06:01.521  3591-3627  OpenGLRenderer          com.example.tutv                     W  Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+2026-03-12 15:06:01.521  3591-3627  OpenGLRenderer          com.example.tutv                     D  Swap behavior 0
+2026-03-12 15:06:01.550  3591-3627  EGL_emulation           com.example.tutv                     D  eglCreateContext: 0xa6bf35e0: maj 2 min 0 rcv 2
+2026-03-12 15:06:01.981  3591-3627  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6bf35e0: ver 2 0 (tinfo 0xa6bfb7b0)
+2026-03-12 15:06:02.553  3591-3591  Choreographer           com.example.tutv                     I  Skipped 83 frames!  The application may be doing too much work on its main thread.
+2026-03-12 15:06:02.652  3591-3627  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6bf35e0: ver 2 0 (tinfo 0xa6bfb7b0)
+2026-03-12 15:06:06.200  3591-3591  Choreographer           com.example.tutv                     I  Skipped 218 frames!  The application may be doing too much work on its main thread.
+2026-03-12 15:06:07.484  1753-1839  InputDispatcher         system_server                        E  channel 'e0e3b4 com.example.tutv/com.example.tutv.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+2026-03-12 15:06:10.159  3704-3704  art                     com.example.tutv                     I  Late-enabling -Xcheck:jni
+2026-03-12 15:06:10.159  3704-3704  art                     com.example.tutv                     W  Unexpected CPU variant for X86 using defaults: x86
+2026-03-12 15:06:10.217  3704-3704  System                  com.example.tutv                     W  ClassLoader referenced unknown path: /data/app/com.example.tutv-1/lib/x86
+2026-03-12 15:06:10.359  3704-3704  AppCompatDelegate       com.example.tutv                     D  Checking for metadata for AppLocalesMetadataHolderService : Service not found
+2026-03-12 15:06:10.413  3704-3704  art                     com.example.tutv                     W  Before Android 4.1, method android.graphics.PorterDuffColorFilter androidx.vectordrawable.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+2026-03-12 15:06:10.618  3704-3704  ExoPlayerImpl           com.example.tutv                     I  Init 6e1ede6 [AndroidXMedia3/1.2.0] [generic_x86, sdk_google_atv_x86, unknown, 24]
+2026-03-12 15:06:10.671  3704-3704  System.err              com.example.tutv                     W  java.lang.IllegalStateException: No suitable media source factory found for content type: 2
+2026-03-12 15:06:10.671  3704-3704  System.err              com.example.tutv                     W  	at androidx.media3.common.util.Assertions.checkStateNotNull(Assertions.java:137)
+2026-03-12 15:06:10.671  3704-3704  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.source.DefaultMediaSourceFactory.createMediaSource(DefaultMediaSourceFactory.java:447)
+2026-03-12 15:06:10.671  3704-3704  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.ExoPlayerImpl.createMediaSources(ExoPlayerImpl.java:1914)
+2026-03-12 15:06:10.671  3704-3704  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.ExoPlayerImpl.setMediaItems(ExoPlayerImpl.java:582)
+2026-03-12 15:06:10.671  3704-3704  System.err              com.example.tutv                     W  	at androidx.media3.common.BasePlayer.setMediaItems(BasePlayer.java:56)
+2026-03-12 15:06:10.671  3704-3704  System.err              com.example.tutv                     W  	at androidx.media3.common.BasePlayer.setMediaItem(BasePlayer.java:41)
+2026-03-12 15:06:10.671  3704-3704  System.err              com.example.tutv                     W  	at com.example.tutv.MainActivity.reproducirCanal(MainActivity.kt:78)
+2026-03-12 15:06:10.672  3704-3704  System.err              com.example.tutv                     W  	at com.example.tutv.MainActivity.onCreate(MainActivity.kt:38)
+2026-03-12 15:06:10.672  3704-3704  System.err              com.example.tutv                     W  	at android.app.Activity.performCreate(Activity.java:6662)
+2026-03-12 15:06:10.672  3704-3704  System.err              com.example.tutv                     W  	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+2026-03-12 15:06:10.672  3704-3704  System.err              com.example.tutv                     W  	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2599)
+2026-03-12 15:06:10.672  3704-3704  System.err              com.example.tutv                     W  	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+2026-03-12 15:06:10.672  3704-3704  System.err              com.example.tutv                     W  	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+2026-03-12 15:06:10.672  3704-3704  System.err              com.example.tutv                     W  	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+2026-03-12 15:06:10.672  3704-3704  System.err              com.example.tutv                     W  	at android.os.Handler.dispatchMessage(Handler.java:102)
+2026-03-12 15:06:10.672  3704-3704  System.err              com.example.tutv                     W  	at android.os.Looper.loop(Looper.java:154)
+2026-03-12 15:06:10.672  3704-3704  System.err              com.example.tutv                     W  	at android.app.ActivityThread.main(ActivityThread.java:6077)
+2026-03-12 15:06:10.672  3704-3704  System.err              com.example.tutv                     W  	at java.lang.reflect.Method.invoke(Native Method)
+2026-03-12 15:06:10.672  3704-3704  System.err              com.example.tutv                     W  	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+2026-03-12 15:06:10.672  3704-3704  System.err              com.example.tutv                     W  	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+2026-03-12 15:06:10.974  3704-3704  <no-tag>                com.example.tutv                     D  HostConnection::get() New Host Connection established 0xa6a3f140, tid 3704
+2026-03-12 15:06:10.978  3704-3704  Choreographer           com.example.tutv                     I  Skipped 44 frames!  The application may be doing too much work on its main thread.
+2026-03-12 15:06:11.017  3704-3732  <no-tag>                com.example.tutv                     D  HostConnection::get() New Host Connection established 0xa6a3f5c0, tid 3732
+2026-03-12 15:06:11.024  3704-3732  OpenGLRenderer          com.example.tutv                     I  Initialized EGL, version 1.4
+2026-03-12 15:06:11.024  3704-3732  OpenGLRenderer          com.example.tutv                     D  Swap behavior 1
+2026-03-12 15:06:11.024  3704-3732  OpenGLRenderer          com.example.tutv                     W  Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+2026-03-12 15:06:11.024  3704-3732  OpenGLRenderer          com.example.tutv                     D  Swap behavior 0
+2026-03-12 15:06:11.043  3704-3732  EGL_emulation           com.example.tutv                     D  eglCreateContext: 0xa6b7f8e0: maj 2 min 0 rcv 2
+2026-03-12 15:06:11.069  3704-3732  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6b7f8e0: ver 2 0 (tinfo 0xa6a118b0)
+2026-03-12 15:06:11.205  3704-3732  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6b7f8e0: ver 2 0 (tinfo 0xa6a118b0)
+2026-03-12 15:06:11.718  3704-3732  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6b7f8e0: ver 2 0 (tinfo 0xa6a118b0)
+2026-03-12 15:06:11.885  3704-3732  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6b7f8e0: ver 2 0 (tinfo 0xa6a118b0)
+2026-03-12 15:06:12.754  3704-3732  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6b7f8e0: ver 2 0 (tinfo 0xa6a118b0)
+2026-03-12 15:06:14.678  3704-3732  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6b7f8e0: ver 2 0 (tinfo 0xa6a118b0)
+2026-03-12 15:06:16.359  3704-3736  ProfileInstaller        com.example.tutv                     D  Installing profile for com.example.tutv
+2026-03-12 15:06:25.195  3704-3711  art                     com.example.tutv                     I  Debugger is no longer active
+2026-03-12 15:06:25.195  3704-3711  art                     com.example.tutv                     I  Starting a blocking GC Instrumentation
+2026-03-12 15:15:26.517  1753-1839  InputDispatcher         system_server                        E  channel '678e244 com.example.tutv/com.example.tutv.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+2026-03-12 15:16:22.845  3878-3878  art                     com.example.tutv                     I  Late-enabling -Xcheck:jni
+2026-03-12 15:16:22.855  3878-3878  art                     com.example.tutv                     W  Unexpected CPU variant for X86 using defaults: x86
+2026-03-12 15:16:23.055  3878-3878  System                  com.example.tutv                     W  ClassLoader referenced unknown path: /data/app/com.example.tutv-2/lib/x86
+2026-03-12 15:16:23.216  3878-3878  art                     com.example.tutv                     W  Verification of void androidx.activity.ComponentActivity.$r8$lambda$7IJBVrN0sHyidCAZufWEJFc7-yY(androidx.activity.ComponentActivity, androidx.activity.OnBackPressedDispatcher) took 123.745ms
+2026-03-12 15:16:23.296  3878-3878  AppCompatDelegate       com.example.tutv                     D  Checking for metadata for AppLocalesMetadataHolderService : Service not found
+2026-03-12 15:16:23.318  3878-3878  art                     com.example.tutv                     W  Before Android 4.1, method android.graphics.PorterDuffColorFilter androidx.vectordrawable.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+2026-03-12 15:16:23.525  3878-3878  ExoPlayerImpl           com.example.tutv                     I  Init 6e1ede6 [AndroidXMedia3/1.2.0] [generic_x86, sdk_google_atv_x86, unknown, 24]
+2026-03-12 15:16:23.595  3878-3878  System.err              com.example.tutv                     W  java.lang.IllegalStateException: No suitable media source factory found for content type: 2
+2026-03-12 15:16:23.595  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.common.util.Assertions.checkStateNotNull(Assertions.java:137)
+2026-03-12 15:16:23.595  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.source.DefaultMediaSourceFactory.createMediaSource(DefaultMediaSourceFactory.java:447)
+2026-03-12 15:16:23.595  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.ExoPlayerImpl.createMediaSources(ExoPlayerImpl.java:1914)
+2026-03-12 15:16:23.598  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.ExoPlayerImpl.setMediaItems(ExoPlayerImpl.java:582)
+2026-03-12 15:16:23.598  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.common.BasePlayer.setMediaItems(BasePlayer.java:56)
+2026-03-12 15:16:23.598  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.common.BasePlayer.setMediaItem(BasePlayer.java:41)
+2026-03-12 15:16:23.598  3878-3878  System.err              com.example.tutv                     W  	at com.example.tutv.MainActivity.reproducirCanal(MainActivity.kt:75)
+2026-03-12 15:16:23.598  3878-3878  System.err              com.example.tutv                     W  	at com.example.tutv.MainActivity.onCreate(MainActivity.kt:37)
+2026-03-12 15:16:23.598  3878-3878  System.err              com.example.tutv                     W  	at android.app.Activity.performCreate(Activity.java:6662)
+2026-03-12 15:16:23.598  3878-3878  System.err              com.example.tutv                     W  	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+2026-03-12 15:16:23.598  3878-3878  System.err              com.example.tutv                     W  	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2599)
+2026-03-12 15:16:23.598  3878-3878  System.err              com.example.tutv                     W  	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+2026-03-12 15:16:23.598  3878-3878  System.err              com.example.tutv                     W  	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+2026-03-12 15:16:23.598  3878-3878  System.err              com.example.tutv                     W  	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+2026-03-12 15:16:23.598  3878-3878  System.err              com.example.tutv                     W  	at android.os.Handler.dispatchMessage(Handler.java:102)
+2026-03-12 15:16:23.598  3878-3878  System.err              com.example.tutv                     W  	at android.os.Looper.loop(Looper.java:154)
+2026-03-12 15:16:23.598  3878-3878  System.err              com.example.tutv                     W  	at android.app.ActivityThread.main(ActivityThread.java:6077)
+2026-03-12 15:16:23.598  3878-3878  System.err              com.example.tutv                     W  	at java.lang.reflect.Method.invoke(Native Method)
+2026-03-12 15:16:23.599  3878-3878  System.err              com.example.tutv                     W  	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+2026-03-12 15:16:23.599  3878-3878  System.err              com.example.tutv                     W  	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+2026-03-12 15:16:23.633  3878-3878  <no-tag>                com.example.tutv                     D  HostConnection::get() New Host Connection established 0xa6bfe1c0, tid 3878
+2026-03-12 15:16:24.063  3878-3878  Choreographer           com.example.tutv                     I  Skipped 59 frames!  The application may be doing too much work on its main thread.
+2026-03-12 15:16:24.152  3878-3911  <no-tag>                com.example.tutv                     D  HostConnection::get() New Host Connection established 0xa6bfe640, tid 3911
+2026-03-12 15:16:24.160  3878-3911  OpenGLRenderer          com.example.tutv                     I  Initialized EGL, version 1.4
+2026-03-12 15:16:24.160  3878-3911  OpenGLRenderer          com.example.tutv                     D  Swap behavior 1
+2026-03-12 15:16:24.160  3878-3911  OpenGLRenderer          com.example.tutv                     W  Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+2026-03-12 15:16:24.160  3878-3911  OpenGLRenderer          com.example.tutv                     D  Swap behavior 0
+2026-03-12 15:16:24.182  3878-3911  EGL_emulation           com.example.tutv                     D  eglCreateContext: 0xa6bf9760: maj 2 min 0 rcv 2
+2026-03-12 15:16:24.205  3878-3911  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6bf9760: ver 2 0 (tinfo 0xa6bfc7e0)
+2026-03-12 15:16:24.268  3878-3911  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6bf9760: ver 2 0 (tinfo 0xa6bfc7e0)
+2026-03-12 15:16:24.614  3878-3911  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6bf9760: ver 2 0 (tinfo 0xa6bfc7e0)
+2026-03-12 15:16:24.788  3878-3911  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6bf9760: ver 2 0 (tinfo 0xa6bfc7e0)
+2026-03-12 15:16:29.332  3878-3917  ProfileInstaller        com.example.tutv                     D  Installing profile for com.example.tutv
+2026-03-12 15:16:37.871  3878-3885  art                     com.example.tutv                     I  Debugger is no longer active
+2026-03-12 15:16:37.871  3878-3885  art                     com.example.tutv                     I  Starting a blocking GC Instrumentation
+2026-03-12 15:16:43.900  3878-3878  System.err              com.example.tutv                     W  java.lang.IllegalStateException: No suitable media source factory found for content type: 2
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.common.util.Assertions.checkStateNotNull(Assertions.java:137)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.source.DefaultMediaSourceFactory.createMediaSource(DefaultMediaSourceFactory.java:447)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.ExoPlayerImpl.createMediaSources(ExoPlayerImpl.java:1914)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.ExoPlayerImpl.setMediaItems(ExoPlayerImpl.java:582)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.common.BasePlayer.setMediaItems(BasePlayer.java:56)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.common.BasePlayer.setMediaItem(BasePlayer.java:41)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at com.example.tutv.MainActivity.reproducirCanal(MainActivity.kt:75)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at com.example.tutv.MainActivity.onCreate$lambda$0(MainActivity.kt:52)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at com.example.tutv.MainActivity$$ExternalSyntheticLambda0.onClick(D8$$SyntheticClass:0)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at android.view.View.performClick(View.java:5610)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1345)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at android.view.View.onKeyUp(View.java:10581)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at android.widget.TextView.onKeyUp(TextView.java:6435)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at android.view.KeyEvent.dispatch(KeyEvent.java:2700)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at android.view.View.dispatchKeyEvent(View.java:9880)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at com.android.internal.policy.DecorView.superDispatchKeyEvent(DecorView.java:403)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at com.android.internal.policy.PhoneWindow.superDispatchKeyEvent(PhoneWindow.java:1800)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at androidx.core.view.KeyEventDispatcher.activitySuperDispatchKeyEventPre28(KeyEventDispatcher.java:136)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:89)
+2026-03-12 15:16:43.901  3878-3878  System.err              com.example.tutv                     W  	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.kt:110)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:591)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3397)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:317)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:4327)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4298)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3849)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3902)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3868)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:3995)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3876)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4052)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3849)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3902)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3868)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3876)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3849)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3902)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3868)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4028)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4189)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2365)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:1961)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:1952)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2342)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.os.MessageQueue.nativePollOnce(Native Method)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.os.MessageQueue.next(MessageQueue.java:323)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.os.Looper.loop(Looper.java:136)
+2026-03-12 15:16:43.903  3878-3878  System.err              com.example.tutv                     W  	at android.app.ActivityThread.main(ActivityThread.java:6077)
+2026-03-12 15:16:43.904  3878-3878  System.err              com.example.tutv                     W  	at java.lang.reflect.Method.invoke(Native Method)
+2026-03-12 15:16:43.904  3878-3878  System.err              com.example.tutv                     W  	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+2026-03-12 15:16:43.904  3878-3878  System.err              com.example.tutv                     W  	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+2026-03-12 15:16:45.971  3878-3878  System.err              com.example.tutv                     W  java.lang.IllegalStateException: No suitable media source factory found for content type: 2
+2026-03-12 15:16:45.971  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.common.util.Assertions.checkStateNotNull(Assertions.java:137)
+2026-03-12 15:16:45.971  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.source.DefaultMediaSourceFactory.createMediaSource(DefaultMediaSourceFactory.java:447)
+2026-03-12 15:16:45.971  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.ExoPlayerImpl.createMediaSources(ExoPlayerImpl.java:1914)
+2026-03-12 15:16:45.971  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.ExoPlayerImpl.setMediaItems(ExoPlayerImpl.java:582)
+2026-03-12 15:16:45.971  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.common.BasePlayer.setMediaItems(BasePlayer.java:56)
+2026-03-12 15:16:45.971  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.common.BasePlayer.setMediaItem(BasePlayer.java:41)
+2026-03-12 15:16:45.971  3878-3878  System.err              com.example.tutv                     W  	at com.example.tutv.MainActivity.reproducirCanal(MainActivity.kt:75)
+2026-03-12 15:16:45.971  3878-3878  System.err              com.example.tutv                     W  	at com.example.tutv.MainActivity.onCreate$lambda$0(MainActivity.kt:52)
+2026-03-12 15:16:45.971  3878-3878  System.err              com.example.tutv                     W  	at com.example.tutv.MainActivity$$ExternalSyntheticLambda0.onClick(D8$$SyntheticClass:0)
+2026-03-12 15:16:45.971  3878-3878  System.err              com.example.tutv                     W  	at android.view.View.performClick(View.java:5610)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1345)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at android.view.View.onKeyUp(View.java:10581)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at android.widget.TextView.onKeyUp(TextView.java:6435)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at android.view.KeyEvent.dispatch(KeyEvent.java:2700)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at android.view.View.dispatchKeyEvent(View.java:9880)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at com.android.internal.policy.DecorView.superDispatchKeyEvent(DecorView.java:403)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at com.android.internal.policy.PhoneWindow.superDispatchKeyEvent(PhoneWindow.java:1800)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at androidx.core.view.KeyEventDispatcher.activitySuperDispatchKeyEventPre28(KeyEventDispatcher.java:136)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:89)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.kt:110)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:591)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3397)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:317)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:4327)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4298)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3849)
+2026-03-12 15:16:45.972  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3902)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3868)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:3995)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3876)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4052)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3849)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3902)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3868)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3876)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3849)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3902)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3868)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4028)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4189)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2365)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:1961)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:1952)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2342)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.os.MessageQueue.nativePollOnce(Native Method)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.os.MessageQueue.next(MessageQueue.java:323)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.os.Looper.loop(Looper.java:136)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at android.app.ActivityThread.main(ActivityThread.java:6077)
+2026-03-12 15:16:45.973  3878-3878  System.err              com.example.tutv                     W  	at java.lang.reflect.Method.invoke(Native Method)
+2026-03-12 15:16:45.974  3878-3878  System.err              com.example.tutv                     W  	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+2026-03-12 15:16:45.974  3878-3878  System.err              com.example.tutv                     W  	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+2026-03-12 15:16:48.099  3878-3878  System.err              com.example.tutv                     W  java.lang.IllegalStateException: No suitable media source factory found for content type: 2
+2026-03-12 15:16:48.099  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.common.util.Assertions.checkStateNotNull(Assertions.java:137)
+2026-03-12 15:16:48.099  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.source.DefaultMediaSourceFactory.createMediaSource(DefaultMediaSourceFactory.java:447)
+2026-03-12 15:16:48.099  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.ExoPlayerImpl.createMediaSources(ExoPlayerImpl.java:1914)
+2026-03-12 15:16:48.099  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.ExoPlayerImpl.setMediaItems(ExoPlayerImpl.java:582)
+2026-03-12 15:16:48.099  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.common.BasePlayer.setMediaItems(BasePlayer.java:56)
+2026-03-12 15:16:48.099  3878-3878  System.err              com.example.tutv                     W  	at androidx.media3.common.BasePlayer.setMediaItem(BasePlayer.java:41)
+2026-03-12 15:16:48.099  3878-3878  System.err              com.example.tutv                     W  	at com.example.tutv.MainActivity.reproducirCanal(MainActivity.kt:75)
+2026-03-12 15:16:48.099  3878-3878  System.err              com.example.tutv                     W  	at com.example.tutv.MainActivity.onCreate$lambda$1(MainActivity.kt:59)
+2026-03-12 15:16:48.099  3878-3878  System.err              com.example.tutv                     W  	at com.example.tutv.MainActivity$$ExternalSyntheticLambda1.onClick(D8$$SyntheticClass:0)
+2026-03-12 15:16:48.099  3878-3878  System.err              com.example.tutv                     W  	at android.view.View.performClick(View.java:5610)
+2026-03-12 15:16:48.099  3878-3878  System.err              com.example.tutv                     W  	at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1345)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.View.onKeyUp(View.java:10581)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.widget.TextView.onKeyUp(TextView.java:6435)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.KeyEvent.dispatch(KeyEvent.java:2700)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.View.dispatchKeyEvent(View.java:9880)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1667)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at com.android.internal.policy.DecorView.superDispatchKeyEvent(DecorView.java:403)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at com.android.internal.policy.PhoneWindow.superDispatchKeyEvent(PhoneWindow.java:1800)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at androidx.core.view.KeyEventDispatcher.activitySuperDispatchKeyEventPre28(KeyEventDispatcher.java:136)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at androidx.core.view.KeyEventDispatcher.dispatchKeyEvent(KeyEventDispatcher.java:89)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at androidx.core.app.ComponentActivity.dispatchKeyEvent(ComponentActivity.kt:110)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at androidx.appcompat.app.AppCompatActivity.dispatchKeyEvent(AppCompatActivity.java:591)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at androidx.appcompat.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:59)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at androidx.appcompat.app.AppCompatDelegateImpl$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImpl.java:3397)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:317)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:4327)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4298)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3849)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3902)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3868)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:3995)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3876)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4052)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3849)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3902)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3868)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3876)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3849)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3902)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3868)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4028)
+2026-03-12 15:16:48.100  3878-3878  System.err              com.example.tutv                     W  	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4189)
+2026-03-12 15:16:48.101  3878-3878  System.err              com.example.tutv                     W  	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2365)
+2026-03-12 15:16:48.101  3878-3878  System.err              com.example.tutv                     W  	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:1961)
+2026-03-12 15:16:48.101  3878-3878  System.err              com.example.tutv                     W  	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:1952)
+2026-03-12 15:16:48.101  3878-3878  System.err              com.example.tutv                     W  	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2342)
+2026-03-12 15:16:48.101  3878-3878  System.err              com.example.tutv                     W  	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+2026-03-12 15:16:48.101  3878-3878  System.err              com.example.tutv                     W  	at android.os.MessageQueue.nativePollOnce(Native Method)
+2026-03-12 15:16:48.101  3878-3878  System.err              com.example.tutv                     W  	at android.os.MessageQueue.next(MessageQueue.java:323)
+2026-03-12 15:16:48.101  3878-3878  System.err              com.example.tutv                     W  	at android.os.Looper.loop(Looper.java:136)
+2026-03-12 15:16:48.101  3878-3878  System.err              com.example.tutv                     W  	at android.app.ActivityThread.main(ActivityThread.java:6077)
+2026-03-12 15:16:48.101  3878-3878  System.err              com.example.tutv                     W  	at java.lang.reflect.Method.invoke(Native Method)
+2026-03-12 15:16:48.101  3878-3878  System.err              com.example.tutv                     W  	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+2026-03-12 15:16:48.101  3878-3878  System.err              com.example.tutv                     W  	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+2026-03-12 15:24:41.269  1753-1839  InputDispatcher         system_server                        E  channel '814b83e com.example.tutv/com.example.tutv.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+2026-03-12 15:26:41.821  4043-4043  art                     com.example.tutv                     I  Late-enabling -Xcheck:jni
+2026-03-12 15:26:41.821  4043-4043  art                     com.example.tutv                     W  Unexpected CPU variant for X86 using defaults: x86
+2026-03-12 15:26:42.020  4043-4043  System                  com.example.tutv                     W  ClassLoader referenced unknown path: /data/app/com.example.tutv-1/lib/x86
+2026-03-12 15:26:42.169  4043-4043  AppCompatDelegate       com.example.tutv                     D  Checking for metadata for AppLocalesMetadataHolderService : Service not found
+2026-03-12 15:26:42.184  4043-4043  art                     com.example.tutv                     W  Before Android 4.1, method android.graphics.PorterDuffColorFilter androidx.vectordrawable.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+2026-03-12 15:26:42.367  4043-4043  ExoPlayerImpl           com.example.tutv                     I  Init 6e1ede6 [AndroidXMedia3/1.2.0] [generic_x86, sdk_google_atv_x86, unknown, 24]
+2026-03-12 15:26:42.445  4043-4043  AndroidRuntime          com.example.tutv                     D  Shutting down VM
+2026-03-12 15:26:42.446  4043-4043  AndroidRuntime          com.example.tutv                     E  FATAL EXCEPTION: main
+                                                                                                    Process: com.example.tutv, PID: 4043
+                                                                                                    java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.tutv/com.example.tutv.MainActivity}: java.lang.IllegalStateException: No suitable media source factory found for content type: 2
+                                                                                                    	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2646)
+                                                                                                    	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+                                                                                                    	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                                                                    	at android.os.Looper.loop(Looper.java:154)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:6077)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+                                                                                                    Caused by: java.lang.IllegalStateException: No suitable media source factory found for content type: 2
+                                                                                                    	at androidx.media3.common.util.Assertions.checkStateNotNull(Assertions.java:137)
+                                                                                                    	at androidx.media3.exoplayer.source.DefaultMediaSourceFactory.createMediaSource(DefaultMediaSourceFactory.java:447)
+                                                                                                    	at androidx.media3.exoplayer.ExoPlayerImpl.createMediaSources(ExoPlayerImpl.java:1914)
+                                                                                                    	at androidx.media3.exoplayer.ExoPlayerImpl.setMediaItems(ExoPlayerImpl.java:582)
+                                                                                                    	at androidx.media3.common.BasePlayer.setMediaItems(BasePlayer.java:56)
+                                                                                                    	at androidx.media3.common.BasePlayer.setMediaItem(BasePlayer.java:41)
+                                                                                                    	at com.example.tutv.MainActivity.reproducirCanal(MainActivity.kt:68)
+                                                                                                    	at com.example.tutv.MainActivity.onCreate(MainActivity.kt:34)
+                                                                                                    	at android.app.Activity.performCreate(Activity.java:6662)
+                                                                                                    	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+                                                                                                    	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2599)
+                                                                                                    	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707) 
+                                                                                                    	at android.app.ActivityThread.-wrap12(ActivityThread.java) 
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460) 
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:102) 
+                                                                                                    	at android.os.Looper.loop(Looper.java:154) 
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:6077) 
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method) 
+                                                                                                    	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866) 
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756) 
+2026-03-12 15:26:50.645  4092-4092  art                     com.example.tutv                     I  Late-enabling -Xcheck:jni
+2026-03-12 15:26:50.645  4092-4092  art                     com.example.tutv                     W  Unexpected CPU variant for X86 using defaults: x86
+2026-03-12 15:26:50.716  4092-4092  System                  com.example.tutv                     W  ClassLoader referenced unknown path: /data/app/com.example.tutv-1/lib/x86
+2026-03-12 15:26:50.874  4092-4092  AppCompatDelegate       com.example.tutv                     D  Checking for metadata for AppLocalesMetadataHolderService : Service not found
+2026-03-12 15:26:50.903  4092-4092  art                     com.example.tutv                     W  Before Android 4.1, method android.graphics.PorterDuffColorFilter androidx.vectordrawable.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+2026-03-12 15:26:51.080  4092-4092  ExoPlayerImpl           com.example.tutv                     I  Init 6e1ede6 [AndroidXMedia3/1.2.0] [generic_x86, sdk_google_atv_x86, unknown, 24]
+2026-03-12 15:26:51.174  4092-4092  AndroidRuntime          com.example.tutv                     D  Shutting down VM
+2026-03-12 15:26:51.175  4092-4092  AndroidRuntime          com.example.tutv                     E  FATAL EXCEPTION: main
+                                                                                                    Process: com.example.tutv, PID: 4092
+                                                                                                    java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.tutv/com.example.tutv.MainActivity}: java.lang.IllegalStateException: No suitable media source factory found for content type: 2
+                                                                                                    	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2646)
+                                                                                                    	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+                                                                                                    	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                                                                    	at android.os.Looper.loop(Looper.java:154)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:6077)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+                                                                                                    Caused by: java.lang.IllegalStateException: No suitable media source factory found for content type: 2
+                                                                                                    	at androidx.media3.common.util.Assertions.checkStateNotNull(Assertions.java:137)
+                                                                                                    	at androidx.media3.exoplayer.source.DefaultMediaSourceFactory.createMediaSource(DefaultMediaSourceFactory.java:447)
+                                                                                                    	at androidx.media3.exoplayer.ExoPlayerImpl.createMediaSources(ExoPlayerImpl.java:1914)
+                                                                                                    	at androidx.media3.exoplayer.ExoPlayerImpl.setMediaItems(ExoPlayerImpl.java:582)
+                                                                                                    	at androidx.media3.common.BasePlayer.setMediaItems(BasePlayer.java:56)
+                                                                                                    	at androidx.media3.common.BasePlayer.setMediaItem(BasePlayer.java:41)
+                                                                                                    	at com.example.tutv.MainActivity.reproducirCanal(MainActivity.kt:68)
+                                                                                                    	at com.example.tutv.MainActivity.onCreate(MainActivity.kt:34)
+                                                                                                    	at android.app.Activity.performCreate(Activity.java:6662)
+                                                                                                    	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+                                                                                                    	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2599)
+                                                                                                    	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707) 
+                                                                                                    	at android.app.ActivityThread.-wrap12(ActivityThread.java) 
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460) 
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:102) 
+                                                                                                    	at android.os.Looper.loop(Looper.java:154) 
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:6077) 
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method) 
+                                                                                                    	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866) 
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756) 
+2026-03-12 15:29:04.293  4217-4217  art                     com.example.tutv                     I  Late-enabling -Xcheck:jni
+2026-03-12 15:29:04.293  4217-4217  art                     com.example.tutv                     W  Unexpected CPU variant for X86 using defaults: x86
+2026-03-12 15:29:04.460  4217-4217  System                  com.example.tutv                     W  ClassLoader referenced unknown path: /data/app/com.example.tutv-2/lib/x86
+2026-03-12 15:29:04.585  4217-4217  AppCompatDelegate       com.example.tutv                     D  Checking for metadata for AppLocalesMetadataHolderService : Service not found
+2026-03-12 15:29:04.602  4217-4217  art                     com.example.tutv                     W  Before Android 4.1, method android.graphics.PorterDuffColorFilter androidx.vectordrawable.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+2026-03-12 15:29:04.745  4217-4217  ExoPlayerImpl           com.example.tutv                     I  Init 6e1ede6 [AndroidXMedia3/1.2.0] [generic_x86, sdk_google_atv_x86, unknown, 24]
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  java.lang.IllegalStateException: No suitable media source factory found for content type: 2
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at androidx.media3.common.util.Assertions.checkStateNotNull(Assertions.java:137)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.source.DefaultMediaSourceFactory.createMediaSource(DefaultMediaSourceFactory.java:447)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.ExoPlayerImpl.createMediaSources(ExoPlayerImpl.java:1914)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at androidx.media3.exoplayer.ExoPlayerImpl.setMediaItems(ExoPlayerImpl.java:582)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at androidx.media3.common.BasePlayer.setMediaItems(BasePlayer.java:56)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at androidx.media3.common.BasePlayer.setMediaItem(BasePlayer.java:41)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at com.example.tutv.MainActivity.reproducirCanal(MainActivity.kt:73)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at com.example.tutv.MainActivity.onCreate(MainActivity.kt:36)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at android.app.Activity.performCreate(Activity.java:6662)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2599)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at android.os.Handler.dispatchMessage(Handler.java:102)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at android.os.Looper.loop(Looper.java:154)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at android.app.ActivityThread.main(ActivityThread.java:6077)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at java.lang.reflect.Method.invoke(Native Method)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+2026-03-12 15:29:04.811  4217-4217  System.err              com.example.tutv                     W  	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+2026-03-12 15:29:05.045  4217-4217  <no-tag>                com.example.tutv                     D  HostConnection::get() New Host Connection established 0xa6bfe1c0, tid 4217
+2026-03-12 15:29:05.057  4217-4217  Choreographer           com.example.tutv                     I  Skipped 33 frames!  The application may be doing too much work on its main thread.
+2026-03-12 15:29:05.111  4217-4255  <no-tag>                com.example.tutv                     D  HostConnection::get() New Host Connection established 0xa6bfe640, tid 4255
+2026-03-12 15:29:05.121  4217-4255  OpenGLRenderer          com.example.tutv                     I  Initialized EGL, version 1.4
+2026-03-12 15:29:05.121  4217-4255  OpenGLRenderer          com.example.tutv                     D  Swap behavior 1
+2026-03-12 15:29:05.121  4217-4255  OpenGLRenderer          com.example.tutv                     W  Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+2026-03-12 15:29:05.121  4217-4255  OpenGLRenderer          com.example.tutv                     D  Swap behavior 0
+2026-03-12 15:29:05.144  4217-4255  EGL_emulation           com.example.tutv                     D  eglCreateContext: 0xa6bfabe0: maj 2 min 0 rcv 2
+2026-03-12 15:29:05.185  4217-4255  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6bfabe0: ver 2 0 (tinfo 0xa6bfb8e0)
+2026-03-12 15:29:05.279  4217-4255  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6bfabe0: ver 2 0 (tinfo 0xa6bfb8e0)
+2026-03-12 15:29:05.611  4217-4255  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6bfabe0: ver 2 0 (tinfo 0xa6bfb8e0)
+2026-03-12 15:29:05.726  4217-4255  EGL_emulation           com.example.tutv                     D  eglMakeCurrent: 0xa6bfabe0: ver 2 0 (tinfo 0xa6bfb8e0)
+2026-03-12 15:29:10.676  4217-4258  ProfileInstaller        com.example.tutv                     D  Installing profile for com.example.tutv
+2026-03-12 15:29:19.318  4217-4224  art                     com.example.tutv                     I  Debugger is no longer active
+2026-03-12 15:29:19.318  4217-4224  art                     com.example.tutv                     I  Starting a blocking GC Instrumentation

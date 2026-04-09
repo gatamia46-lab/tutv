@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TuTV</string>
+    <string name="search_hint">Buscar en YouTube...</string>
+    <string name="exit_button">SALIR</string>
+    <string name="logo_description">Logotipo de la aplicación TuTV</string>
+</resources>
