@@ -44,7 +44,7 @@ https://radiosargentina.com.ar/php/artvDI.php?id=ARCD_CABA_____CTVE24H____
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/master.m3u8
 #EXTINF:-1,FRANCE 24
 https://live.france24.com/hls/live/2037220-b/F24_ES_HI_HLS/master_5000.m3u8
-#EXTINF:-1,RT TV
+#EXTINF:-1, RT Español
 https://rt-esp.rttv.com/live/rtesp/playlist.m3u8
 #EXTINF:-1,TELESUR
 https://mblesmain01.telesur.ultrabase.net/mbliveMain/hd/chunklist.m3u8
