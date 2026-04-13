@@ -27,7 +27,7 @@ http://181.209.37.74:8001/play/a05w/index.m3u8
 #EXTINF:-1,Canal 26
 https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8
 #EXTINF:-1 tvg-id="TN.ar@SD" tvg-logo="https://i.imgur.com/vFwPhPS.png" group-title="News",TN (1080)
-https://latam-cache-sv2-cdn.latamlive.net/TN_ENC_LIVE/index.mpd
+https://latam-cache-sv2-cdn.latamlive.net/TN_ENC_LIVE/index.m3u8
 #EXTINF:-1 tvg-id="TyCSports.ar@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/TyC_Sports_logo.svg/960px-TyC_Sports_logo.svg.png" group-title="Sports",TyC Sports
 https://live-04-11-tyc24.vodgc.net/tyc24/index_tyc24_1080.m3u8
 #EXTINF:-1,Garagetv
