@@ -29,10 +29,18 @@ http://181.209.37.74:8001/play/a05w/index.m3u8
 https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8
 #EXTINF:-1, C5N (1080p)
 http://201.217.246.42:44310/Live/3fcb6e26785fd8d415571b26dc3cf5d3/c5n_480.m3u8
-#EXTINF:-1,AMC 
-https://radiosargentina.com.ar/php/artvDI.php?id=ARCD_CABA_____CAMC_______
 #EXTINF:-1,Garagetv
 https://stream1.sersat.com/hls/garagetv.m3u8
+#EXTINF:-1,AMC 
+https://radiosargentina.com.ar/php/artvDI.php?id=ARCD_CABA_____CAMC_______
+#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/de/HBO_logo.svg" group-title="Varios",HBO
+http://45.5.118.152:8000/play/a0bm/index.m3u8
+#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/de/Hbo_2.png" group-title="Varios",HBO 2
+http://45.5.116.228:8000/play/a00c/index.m3u8
+#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/de/Hbo_2.png" group-title="Varios",HBO 2 HD
+http://45.5.151.147:8000/play/a010/index.m3u8
+#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/HBO_Plus.png" group-title="Varios",HBO+
+http://45.5.116.228:8000/play/a0l4/index.m3u8
 #EXTINF:-1,Cine Sony
 https://a-cdn.klowdtv.com/live1/cine_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="La Pantera Rosa" tvg-name="La Pantera Rosa" tvg-logo="https://www.ecured.cu/images/0/04/Pantera_Rosa_2.jpg" group-title="INFANTILES",La Pantera Rosa
